@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculater</title>
+    <link rel="stylesheet" href="calc.css">
+</head>
+<body>
+    <div class="calculator-wrapper">
+     <h1 class="title">Calculator</h1>
+    
+    <div class="Calculator">
+        
+        <input type="text" id="display">
+        <div class="buttons">
+            <button onclick="cleardisplay()">C</button>
+            <button onclick="appendvalue('+')">+</button>
+            <button onclick="appendvalue('-')">-</button>
+            <button onclick="appendvalue('X')">X</button>
+            
+            <button onclick="appendvalue('7 ')">7</button>
+            <button onclick="appendvalue('8')">8</button>
+            <button onclick="appendvalue('9')">9</button>
+            <button onclick="appendvalue('/')">/</button>
+
+            <button onclick="appendvalue('4')">4</button>
+            <button onclick="appendvalue('5')">5</button>
+            <button onclick="appendvalue('6')">6</button>
+            <button onclick="appendvalue('.')">.</button>
+
+            <button onclick="appendvalue('1')">1</button>
+            <button onclick="appendvalue('2')">2</button>
+            <button onclick="appendvalue('3')">3</button>
+            <button onclick="calculateresult('=')" style="background: linear-gradient(135deg, #ea1b2c, #ffc371);">=</button>
+
+            
+        </div>
+    </div>
+</div>
+    
+</body>
+<script src="cal.js"></script>
+</html>

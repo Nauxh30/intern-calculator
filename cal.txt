@@ -1,0 +1,6 @@
+features
+1 Numbers
+2 operators
+3 display value
+4 specified operators(clears,equals)
+
