@@ -1,24 +1,23 @@
-const display=document.getElementById('display')
+const display = document.getElementById('display');
 
-// add function
-function appendvalue(value){
-    display.value += value
-
+// Append value
+function appendvalue(value) {
+    display.value += value;
 }
 
-function cleardisplay(){
-    display.value = " "
+// Clear display
+function cleardisplay() {
+    display.value = "";
 }
 
-// try and catch property 
-
-function calculateresult(){
-    try{
-        display.value=eval(display.value)
+// Calculate result
+function calculateresult() {
+    try {
+        // Replace 'x' with '*' for multiplication
+        let expression = display.value.replace(/x/g, '*');
+        display.value = eval(expression);
+    } catch (error) {
+        alert("Invalid Expression");
+        cleardisplay();
     }
-    catch(error){
-        alert("Invalid Expression")
-        cleardisplay
-    }
-
 }
